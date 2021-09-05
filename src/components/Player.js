@@ -1,10 +1,11 @@
-import './App.css';
+import '../App.css';
 import {Sprite, Graphics, Container,Text, InteractionEvents} from '@inlet/react-pixi';
 import React from "react";
 import {TextStyle} from "pixi.js";
 import {ColorOverlayFilter} from '@pixi/filter-color-overlay';
-import {red, white, blue} from "./colors";
-import {defaultPlayer} from "./data/players";
+import {red, white, blue} from "../colors";
+import {defaultPlayer} from "../data/players";
+import {AppContext} from "../state/state";
 
 const width = 140;
 const circleRadius = (width * 0.6)/2
@@ -30,9 +31,12 @@ const onDragMove = (event) => {
     }
 };
 
-function Player({x = 0, y = 0, player = defaultPlayer, theme = 'pl'}) {
+function Player({position, player}) {
+    const {theme} = React.useContext(AppContext);
+
     const color = theme === 'cl' ? blue : red;
     const filter = new ColorOverlayFilter(color, 0.05)
+
     const faceBgCircle = React.useCallback(g => {
         g.clear()
         g.lineStyle(0)
@@ -59,10 +63,10 @@ function Player({x = 0, y = 0, player = defaultPlayer, theme = 'pl'}) {
         <Container interactive pointerdown={onDragStart}
                    pointerup={onDragEnd}
                    pointerupoutside={onDragEnd}
-                   pointermove={onDragMove} position={[x, y]} >
+                   pointermove={onDragMove} position={[position.x, position.y]} >
             <Graphics draw={faceBgCircle} />
             <Sprite filters={[filter]}
-                image={`./${player.number}.png`}
+                image={`./img/players/${player.number}.png`}
                 scale={{ x: 0.25, y: 0.25 }}
                 anchor={0.5}
                 x={0}

@@ -2,7 +2,8 @@ const position = {
     GOALKEEPER: 0,
     DEFENDER: 1,
     MIDFIELDER: 2,
-    FORWARD: 3
+    FORWARD: 3,
+    UNKNOWN: 4
 }
 
 const goalkeepers = [
@@ -49,7 +50,7 @@ const forwards = [
     { position: position.FORWARD, name: 'Ronaldo', number: 7 }
 ]
 
-export const defaultPlayer = { position: position.FORWARD, name: '', number: 0 };
+export const defaultPlayer = { position: position.UNKNOWN, name: '', number: 0 };
 
 const playersArray = [
     ...goalkeepers,
