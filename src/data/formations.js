@@ -7,89 +7,89 @@ const defenderLine = height * 0.65;
 const gkLine = height * 0.8;
 
 const F4231 = [
-    { x: width * 0.5, y: gkLine },
+    { name: 'bramkarz', x: width * 0.5, y: gkLine },
 
-    { x: width * 0.78, y: defenderLine - 20 },
-    { x: width * 0.6, y: defenderLine },
-    { x: width * 0.4, y: defenderLine },
-    { x: width * 0.22, y: defenderLine - 20 },
+    { name: 'prawy obrońca', x: width * 0.78, y: defenderLine - 20 },
+    { name: 'środkowy obrońca', x: width * 0.6, y: defenderLine },
+    { name: 'środkowy obrońca', x: width * 0.4, y: defenderLine },
+    { name: 'lewy obrońca', x: width * 0.22, y: defenderLine - 20 },
 
-    { x: width * 0.62, y: midfielderLine + 40 },
-    { x: width * 0.38, y: midfielderLine + 40 },
+    { name: 'środkowy pomocnik', x: width * 0.62, y: midfielderLine + 40 },
+    { name: 'środkowy pomocnik', x: width * 0.38, y: midfielderLine + 40 },
 
-    { x: width * 0.7, y: forwardLine + 50 },
-    { x: width * 0.5, y: midfielderLine - 60 },
-    { x: width * 0.3, y: forwardLine + 50 },
+    { name: 'prawy skrzydłowy', x: width * 0.7, y: forwardLine + 50 },
+    { name: 'ofensywny pomocnik', x: width * 0.5, y: midfielderLine - 60 },
+    { name: 'lewy skrzydłowy', x: width * 0.3, y: forwardLine + 50 },
 
-    { x: width * 0.5, y: forwardLine },
+    { name: 'napastnik', x: width * 0.5, y: forwardLine },
 ]
 
 const F433 = [
-    { x: width * 0.5, y: gkLine },
+    { name: 'bramkarz', x: width * 0.5, y: gkLine },
 
-    { x: width * 0.78, y: defenderLine - 20 },
-    { x: width * 0.6, y: defenderLine },
-    { x: width * 0.4, y: defenderLine },
-    { x: width * 0.22, y: defenderLine - 20 },
+    { name: 'bramkarz', x: width * 0.78, y: defenderLine - 20 },
+    { name: 'bramkarz', x: width * 0.6, y: defenderLine },
+    { name: 'bramkarz', x: width * 0.4, y: defenderLine },
+    { name: 'bramkarz', x: width * 0.22, y: defenderLine - 20 },
 
-    { x: width * 0.62, y: midfielderLine - 20 },
-    { x: width * 0.5, y: midfielderLine + 50 },
-    { x: width * 0.38, y: midfielderLine - 20 },
+    { name: 'bramkarz', x: width * 0.62, y: midfielderLine - 20 },
+    { name: 'bramkarz', x: width * 0.5, y: midfielderLine + 50 },
+    { name: 'bramkarz', x: width * 0.38, y: midfielderLine - 20 },
 
-    { x: width * 0.7, y: forwardLine + 20 },
-    { x: width * 0.5, y: forwardLine },
-    { x: width * 0.3, y: forwardLine + 20 },
+    { name: 'bramkarz', x: width * 0.7, y: forwardLine + 20 },
+    { name: 'bramkarz', x: width * 0.5, y: forwardLine },
+    { name: 'bramkarz', x: width * 0.3, y: forwardLine + 20 },
 ]
 
 const F442 = [
-    { x: width * 0.5, y: gkLine },
+    { name: 'bramkarz', x: width * 0.5, y: gkLine },
 
-    { x: width * 0.78, y: defenderLine - 20 },
-    { x: width * 0.6, y: defenderLine },
-    { x: width * 0.4, y: defenderLine },
-    { x: width * 0.22, y: defenderLine - 20 },
+    { name: 'bramkarz', x: width * 0.78, y: defenderLine - 20 },
+    { name: 'bramkarz', x: width * 0.6, y: defenderLine },
+    { name: 'bramkarz', x: width * 0.4, y: defenderLine },
+    { name: 'bramkarz', x: width * 0.22, y: defenderLine - 20 },
 
-    { x: width * 0.74, y: midfielderLine - 30 },
-    { x: width * 0.59, y: midfielderLine + 20 },
-    { x: width * 0.41, y: midfielderLine + 20 },
-    { x: width * 0.26, y: midfielderLine - 30 },
+    { name: 'bramkarz', x: width * 0.74, y: midfielderLine - 30 },
+    { name: 'bramkarz', x: width * 0.59, y: midfielderLine + 20 },
+    { name: 'bramkarz', x: width * 0.41, y: midfielderLine + 20 },
+    { name: 'bramkarz', x: width * 0.26, y: midfielderLine - 30 },
 
-    { x: width * 0.58, y: forwardLine },
-    { x: width * 0.42, y: forwardLine },
+    { name: 'bramkarz', x: width * 0.58, y: forwardLine },
+    { name: 'bramkarz', x: width * 0.42, y: forwardLine },
 ]
 
 const F352 = [
-    { x: width * 0.5, y: gkLine },
+    { name: 'bramkarz', x: width * 0.5, y: gkLine },
 
-    { x: width * 0.65, y: defenderLine - 10 },
-    { x: width * 0.5, y: defenderLine },
-    { x: width * 0.35, y: defenderLine - 10 },
+    { name: 'bramkarz', x: width * 0.65, y: defenderLine - 10 },
+    { name: 'bramkarz', x: width * 0.5, y: defenderLine },
+    { name: 'bramkarz', x: width * 0.35, y: defenderLine - 10 },
 
-    { x: width * 0.75, y: midfielderLine + 20 },
-    { x: width * 0.6, y: midfielderLine + 40 },
-    { x: width * 0.5, y: midfielderLine - 50 },
-    { x: width * 0.4, y: midfielderLine + 40 },
-    { x: width * 0.25, y: midfielderLine + 20 },
+    { name: 'bramkarz', x: width * 0.75, y: midfielderLine + 20 },
+    { name: 'bramkarz', x: width * 0.6, y: midfielderLine + 40 },
+    { name: 'bramkarz', x: width * 0.5, y: midfielderLine - 50 },
+    { name: 'bramkarz', x: width * 0.4, y: midfielderLine + 40 },
+    { name: 'bramkarz', x: width * 0.25, y: midfielderLine + 20 },
 
-    { x: width * 0.58, y: forwardLine },
-    { x: width * 0.42, y: forwardLine },
+    { name: 'bramkarz', x: width * 0.58, y: forwardLine },
+    { name: 'bramkarz', x: width * 0.42, y: forwardLine },
 ]
 
 const F343 = [
-    { x: width * 0.5, y: gkLine },
+    { name: 'bramkarz', x: width * 0.5, y: gkLine },
 
-    { x: width * 0.67, y: defenderLine - 10 },
-    { x: width * 0.5, y: defenderLine },
-    { x: width * 0.33, y: defenderLine - 10 },
+    { name: 'bramkarz', x: width * 0.67, y: defenderLine - 10 },
+    { name: 'bramkarz', x: width * 0.5, y: defenderLine },
+    { name: 'bramkarz', x: width * 0.33, y: defenderLine - 10 },
 
-    { x: width * 0.74, y: midfielderLine + 20 },
-    { x: width * 0.58, y: midfielderLine + 20 },
-    { x: width * 0.42, y: midfielderLine + 20 },
-    { x: width * 0.26, y: midfielderLine + 20 },
+    { name: 'bramkarz', x: width * 0.74, y: midfielderLine + 20 },
+    { name: 'bramkarz', x: width * 0.58, y: midfielderLine + 20 },
+    { name: 'bramkarz', x: width * 0.42, y: midfielderLine + 20 },
+    { name: 'bramkarz', x: width * 0.26, y: midfielderLine + 20 },
 
-    { x: width * 0.67, y: forwardLine + 30 },
-    { x: width * 0.5, y: forwardLine },
-    { x: width * 0.33, y: forwardLine + 30 },
+    { name: 'bramkarz', x: width * 0.67, y: forwardLine + 30 },
+    { name: 'bramkarz', x: width * 0.5, y: forwardLine },
+    { name: 'bramkarz', x: width * 0.33, y: forwardLine + 30 },
 ]
 
 export const formations = {

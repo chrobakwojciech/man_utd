@@ -82,7 +82,7 @@ function Player({index, context}) {
                 style={
                     new TextStyle({
                         align: 'center',
-                        fontFamily: 'Helvetica, sans-serif',
+                        fontFamily: '"Montserrat", sans-serif',
                         fontSize: 16,
                         fontWeight: 700,
                         fill: ['#fff']
@@ -98,9 +98,9 @@ function Player({index, context}) {
                 style={
                     new TextStyle({
                         align: 'center',
-                        fontFamily: 'Helvetica, sans-serif',
+                        fontFamily: '"Montserrat", sans-serif',
                         fontSize: 14,
-                        fontWeight: 500,
+                        fontWeight: 600,
                         fill: ['#000']
                     })
                 }

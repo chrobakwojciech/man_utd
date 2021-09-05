@@ -12,7 +12,8 @@ const getDefaultPlayers = defaultPlayers.map((player, index) => {
         ...player,
         position: {
             x: formations[defaultFormation][index].x,
-            y: formations[defaultFormation][index].y
+            y: formations[defaultFormation][index].y,
+            name: formations[defaultFormation][index].name
 
         }
     }
@@ -32,7 +33,8 @@ export default function AppContextProvider({children}) {
                 ...player,
                 position: {
                     x: positions[index].x,
-                    y: positions[index].y
+                    y: positions[index].y,
+                    name: positions[index].name
                 }
             }
         })
@@ -48,12 +50,22 @@ export default function AppContextProvider({children}) {
         setPlayers(newPlayers);
     }
 
+    const updatePlayer = (index, player) => {
+        const newPlayers = [...players];
+        newPlayers[index] = {
+            ...newPlayers[index],
+            ...player
+        }
+        setPlayers(newPlayers)
+    }
+
     const exportedValues = {
         theme,
         setTheme,
         formation,
         players,
         movePlayer,
+        updatePlayer,
         updateFormation
     };
 

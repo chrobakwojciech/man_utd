@@ -1,18 +1,18 @@
-import {players} from "../data/players";
+import {AVAILABLE_PLAYERS} from "../data/players";
 import {formations} from "../data/formations";
 
 export const defaultPlayers = [
-    players[1],
-    players[2],
-    players[19],
-    players[5],
-    players[20],
-    players[39],
-    players[18],
-    players[17],
-    players[23],
-    players[7],
-    players[21]
+    AVAILABLE_PLAYERS[1],
+    AVAILABLE_PLAYERS[2],
+    AVAILABLE_PLAYERS[19],
+    AVAILABLE_PLAYERS[5],
+    AVAILABLE_PLAYERS[20],
+    AVAILABLE_PLAYERS[39],
+    AVAILABLE_PLAYERS[18],
+    AVAILABLE_PLAYERS[17],
+    AVAILABLE_PLAYERS[23],
+    AVAILABLE_PLAYERS[7],
+    AVAILABLE_PLAYERS[21]
 ]
 
 export const defaultState = {

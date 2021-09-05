@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import {Box, Container, Grid} from "@material-ui/core";
 import Pitch from "./Pitch";
-import {defaultState} from "../state/state";
 import ThemeForm from "./forms/theme";
 import FormationForm from "./forms/formation";
 import PlayersForm from "./forms/players";
@@ -20,9 +19,9 @@ function App() {
                         spacing={0}
                     >
                         <Grid item xs={2}>
-                            <Box mb={2}><ThemeForm /></Box>
-                            <Box mb={2}><FormationForm /></Box>
-                            {/*<Box mb={2}><PlayersForm /></Box>*/}
+                            <Box mb={0.5}><ThemeForm /></Box>
+                            <Box mb={3}><FormationForm /></Box>
+                            <PlayersForm/>
                         </Grid>
                         <Grid item xs={7} >
                             <Box display="flex" alignItems="center" justifyContent="center">
