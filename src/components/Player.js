@@ -27,12 +27,14 @@ function Player({index, context}) {
     const onDragEnd = (event) => {
         const container = event.currentTarget;
         container.dragging = false;
+        movePlayer(index, event.data.global.x, event.data.global.y)
     };
 
     const onDragMove = (event) => {
         const container = event.currentTarget;
         if (container.dragging) {
-            movePlayer(index, event.data.global.x, event.data.global.y)
+            container.position.x = event.data.global.x
+            container.position.y = event.data.global.y
         }
     };
 
