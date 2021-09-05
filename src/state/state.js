@@ -1,8 +1,7 @@
-import React from 'react';
 import {players} from "../data/players";
 import {formations} from "../data/formations";
 
-const defaultPlayers = [
+export const defaultPlayers = [
     players[1],
     players[2],
     players[19],
@@ -17,9 +16,7 @@ const defaultPlayers = [
 ]
 
 export const defaultState = {
-    theme: 'cl',
+    theme: 'pl',
     players: defaultPlayers,
-    formation: formations["3-5-2"]
+    positions: formations["3-5-2"]
 }
-
-export const AppContext = React.createContext(defaultState);

@@ -1,15 +1,19 @@
 import {Sprite, Stage} from "@inlet/react-pixi";
 import Player from "./Player";
 import React from "react";
-import {AppContext} from "../state/state";
+import {AppContext} from "../state/appContextProvider";
 
+function PitchBg({ theme }) {
+    return (
+        <Sprite image={`./img/bg/${theme}-bg.jpg`} x={0} y={0}/>
+    )
+}
 function Pitch() {
-    const {players, theme, formation} = React.useContext(AppContext);
-
+    const context = React.useContext(AppContext);
     return (
         <Stage width={1053} height={725}>
-            <Sprite image={`./img/bg/${theme}-bg.jpg`} x={0} y={0}/>
-            {players.map(((player, index) => <Player player={player} position={formation[index]}/>))}
+            <PitchBg theme={context.theme}/>
+            {[...Array(11).keys()].map(((index) => <Player context={context} index={index} key={index}/>))}
         </Stage>
     )
 }
