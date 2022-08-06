@@ -5,7 +5,7 @@ import {formations} from "../data/formations";
 export const AppContext = createContext(null);
 
 const defaultTheme = 'pl';
-const defaultFormation = '3-5-2';
+const defaultFormation = '4-3-3';
 
 const getDefaultPlayers = defaultPlayers.map((player, index) => {
     return {

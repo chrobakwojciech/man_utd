@@ -3,20 +3,20 @@ import {formations} from "../data/formations";
 
 export const defaultPlayers = [
     AVAILABLE_PLAYERS[1],
-    AVAILABLE_PLAYERS[2],
-    AVAILABLE_PLAYERS[19],
-    AVAILABLE_PLAYERS[5],
     AVAILABLE_PLAYERS[20],
-    AVAILABLE_PLAYERS[39],
-    AVAILABLE_PLAYERS[18],
+    AVAILABLE_PLAYERS[5],
+    AVAILABLE_PLAYERS[6],
+    AVAILABLE_PLAYERS[12],
+    AVAILABLE_PLAYERS[14],
     AVAILABLE_PLAYERS[17],
-    AVAILABLE_PLAYERS[23],
-    AVAILABLE_PLAYERS[7],
-    AVAILABLE_PLAYERS[21]
+    AVAILABLE_PLAYERS[8],
+    AVAILABLE_PLAYERS[25],
+    AVAILABLE_PLAYERS[9],
+    AVAILABLE_PLAYERS[10]
 ]
 
 export const defaultState = {
     theme: 'pl',
     players: defaultPlayers,
-    positions: formations["3-5-2"]
+    positions: formations["4-3-3"]
 }
