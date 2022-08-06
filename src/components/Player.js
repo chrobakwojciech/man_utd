@@ -67,7 +67,7 @@ function Player({index, context}) {
                    pointermove={onDragMove} position={[position.x, position.y]} >
             <Graphics draw={faceBgCircle} />
             <Sprite filters={[filter]}
-                image={`./img/players/${player.number}.png`}
+                image={`${process.env.PUBLIC_URL}/img/players/${player.number}.png`}
                 scale={{ x: 0.25, y: 0.25 }}
                 anchor={0.5}
                 x={0}

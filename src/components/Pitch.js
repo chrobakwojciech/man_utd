@@ -5,7 +5,7 @@ import {AppContext} from "../state/appContextProvider";
 
 function PitchBg({ theme }) {
     return (
-        <Sprite image={`./img/bg/${theme}-bg.jpg`} x={0} y={0}/>
+        <Sprite image={`${process.env.PUBLIC_URL}/img/bg/${theme}-bg.jpg`} x={0} y={0}/>
     )
 }
 function Pitch() {
