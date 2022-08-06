@@ -11,7 +11,7 @@ function App() {
     return (
         <AppContextProvider>
             <Box pt={4}>
-                <Container maxWidth={"xl"}>
+                <Container maxWidth={false}>
                     <Grid
                         container
                         direction="row"
@@ -23,7 +23,7 @@ function App() {
                             <Box mb={3}><FormationForm /></Box>
                             <PlayersForm/>
                         </Grid>
-                        <Grid item xs={7} >
+                        <Grid item xs={10} >
                             <Box display="flex" alignItems="center" justifyContent="center">
                                 <Pitch/>
                             </Box>
