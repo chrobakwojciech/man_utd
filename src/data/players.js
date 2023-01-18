@@ -10,7 +10,7 @@ const goalkeepers = [
     { positionType: position.GOALKEEPER, name: 'De Gea', number: 1 },
     // { positionType: position.GOALKEEPER, name: 'Henderson', number: 26 },
     { positionType: position.GOALKEEPER, name: 'Heaton', number: 22 },
-    { positionType: position.GOALKEEPER, name: 'Dubravka', number: 31 },
+    // { positionType: position.GOALKEEPER, name: 'Dubravka', number: 31 },
 ]
 
 const defenders = [
@@ -51,7 +51,8 @@ const forwards = [
     { positionType: position.FORWARD, name: 'Elanga', number: 36 },
     { positionType: position.FORWARD, name: 'Shoretire', number: 47 },
     { positionType: position.FORWARD, name: 'Sancho', number: 25 },
-    { positionType: position.FORWARD, name: 'Ronaldo', number: 7 },
+    { positionType: position.FORWARD, name: 'Weghorst', number: 27 },
+    // { positionType: position.FORWARD, name: 'Ronaldo', number: 7 },
     { positionType: position.FORWARD, name: 'Garnacho', number: 49 },
 ]
 
