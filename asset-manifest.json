@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/man_utd/static/css/main.733e90d4.css",
-    "main.js": "/man_utd/static/js/main.518739b3.js",
+    "main.js": "/man_utd/static/js/main.bb85a77b.js",
     "static/js/787.0d259011.chunk.js": "/man_utd/static/js/787.0d259011.chunk.js",
     "index.html": "/man_utd/index.html",
     "main.733e90d4.css.map": "/man_utd/static/css/main.733e90d4.css.map",
-    "main.518739b3.js.map": "/man_utd/static/js/main.518739b3.js.map",
+    "main.bb85a77b.js.map": "/man_utd/static/js/main.bb85a77b.js.map",
     "787.0d259011.chunk.js.map": "/man_utd/static/js/787.0d259011.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.733e90d4.css",
-    "static/js/main.518739b3.js"
+    "static/js/main.bb85a77b.js"
   ]
 }
