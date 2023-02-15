@@ -33,6 +33,7 @@ const midfielders = [
     { positionType: position.MIDFIELDER, name: 'Eriksen', number: 14 },
     { positionType: position.MIDFIELDER, name: 'Pellistri', number: 28 },
     { positionType: position.MIDFIELDER, name: 'Fernandes', number: 8 },
+    { positionType: position.MIDFIELDER, name: 'Sabitzer', number: 15 },
     { positionType: position.MIDFIELDER, name: 'van de Beek', number: 34 },
     { positionType: position.MIDFIELDER, name: 'McTominay', number: 39 },
     { positionType: position.MIDFIELDER, name: 'Hannibal', number: 46 },
